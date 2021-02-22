@@ -3,7 +3,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-st.title('My first app')
+st.title('고객리스트')
 
 df = pd.DataFrame({
   'first column': [1, 2, 3, 4],
