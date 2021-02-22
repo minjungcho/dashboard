@@ -1,3 +1,4 @@
+pip install WordCloud
 import streamlit as st
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
