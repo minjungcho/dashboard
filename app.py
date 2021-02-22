@@ -3,6 +3,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
+pip install memsql
 import memsql
 import MySQLdb 
 import sys
@@ -10,6 +11,7 @@ import os
 import pymysql
 import base64
 import requests
+
 
 #AWS RDS Info
 #host = 'app-sfa.cilpkhhykq9i.ap-northeast-2.rds.amazonaws.com'
