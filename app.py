@@ -29,7 +29,6 @@ import requests
 #    return conn,cursor
 
 #singlestore sfa db
-import pymysql
 connection = pymysql.connect(host='13.124.198.70', user='dbadmin', password='quintet', port = 3306, db = 'sfa')
 cursor = connection.cursor()
 #try:
@@ -53,10 +52,3 @@ mysql = "select * from T_SERIES"
 
 #sql실행
 cursor.execute(query=mysql)
-
-#결과가져오기
-result = cursor.fetchall() #또는 result = cursor.fetchone()
-
-df_T_SERIES = pd.DataFrame(result)
-
-df_T_SERIES['ATTRIBUTE_11']=df_T_SERIES.replace('ATTRIBUTE_11','END_DT' - 'START_DT')
