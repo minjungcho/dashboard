@@ -2,7 +2,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-
+pip install BeautifulSoup
 from bs4 import BeautifulSoup
 import requests
 
